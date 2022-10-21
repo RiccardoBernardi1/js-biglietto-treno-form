@@ -14,29 +14,31 @@
         <main>
             <section id="ticket-generator">
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3>Nome Cognome</h3>
-                            <input type="text" id="name">
+                    <form action="">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Nome Cognome</h3>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="col">
+                                <h3>Km da percorrere</h3>
+                                <input type="text" id="km">
+                            </div>
+                            <div class="col">
+                                <h3>Fascia d'età</h3>
+                                <select name="age" id="age">
+                                    <option value="adult">Maggiorenne</option>
+                                    <option value="under-age">Minorenne
+                                    </option>
+                                    <option value="over-65">Over 65</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col">
-                            <h3>Km da percorrere</h3>
-                            <input type="text" id="km">
+                        <div class="col-btn">
+                            <button type="button" id="btn-generator" class="btn">Genera</button>
+                            <input type="reset" value="Annulla" id="btn-cancel" class="btn">
                         </div>
-                        <div class="col">
-                            <h3>Fascia d'età</h3>
-                            <select name="age" id="age">
-                                <option value="adult">Maggiorenne</option>
-                                <option value="under-age">Minorenne
-                                </option>
-                                <option value="over-65">Over 65</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-btn">
-                        <button id="btn-generator" class="btn">Genera</button>
-                        <button id="btn-cancel" class="btn">Annulla</button>
-                    </div>
+                    </form>
                 </div>
             </section>
             <section id="ticket" class="d-none">

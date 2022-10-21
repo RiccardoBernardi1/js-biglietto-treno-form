@@ -37,3 +37,7 @@ btnGenerator.addEventListener("click", function(){
     document.getElementById("ticket").classList.remove("d-none") ; 
 });
 // 7. Nascondere il biglietto quando si clicca annulla
+const btnCancel= document.getElementById("btn-cancel");
+btnCancel.addEventListener("click", function(){ 
+    window.location.reload()
+});
