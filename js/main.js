@@ -34,13 +34,8 @@ console.log(cpCode);
 // 6. Mostrare a schermo il biglietto
 const btnGenerator= document.getElementById("btn-generator");
 btnGenerator.addEventListener("click", function(){
-    if ( !(km<=0||km>10000||isNaN (km)) ) {
         document.getElementById("ticket").classList.remove("d-none") ; 
-    }else{
-        alert("Hai inserito un parametro non valido!La pagina sarà ricaricata");
-        window.location.reload();
-    }
-});
+})
 // 7. Nascondere il biglietto quando si clicca annulla
 const btnCancel= document.getElementById("btn-cancel");
 btnCancel.addEventListener("click", function(){ 
