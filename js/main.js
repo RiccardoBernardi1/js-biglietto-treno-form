@@ -32,3 +32,8 @@ let cpCode= Math.floor(Math.random() * 10000+90000);
 document.getElementById("cp-code").innerHTML=cpCode
 console.log(cpCode);
 // 6. Mostrare a schermo il biglietto
+const btnGenerator= document.getElementById("btn-generator");
+btnGenerator.addEventListener("click", function(){ 
+    document.getElementById("ticket").classList.remove("d-none") ; 
+});
+// 7. Nascondere il biglietto quando si clicca annulla
