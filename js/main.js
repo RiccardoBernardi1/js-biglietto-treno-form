@@ -7,9 +7,10 @@ document.getElementById("name-showed").innerHTML=name;
 const km=Number(document.getElementById("km").value);
 console.log(km);
 // 3. Far scegliere all'utente la fascia d'età del passeggero
-const age=document.getElementById("age").value;
-console.log(age);
+const age=Number(document.getElementById("age").value;
+console.log(age));
 // 4. Calcolare il prezzo del biglietto
+if ( !(km<=0||km>10000||age<0||age>150||age) )
 let price= km * 0.21
 if (age==="under-age"){
     price-=price*0.2;

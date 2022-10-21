@@ -37,8 +37,11 @@ main{
 }
 .row input,select{
     border: 1px solid #B91450;
-    border-radius: .625rem;
+    border-radius: .3125rem;
     margin: auto;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
 }
 .col-btn{
     width: 12.5rem;
@@ -57,19 +60,34 @@ main{
 }
 .row-border{
     display: flex;
-    border: .125rem solid #808080;
+    border-top: .125rem solid #808080;
+    border-bottom: .125rem solid #808080;
+    border-left: .125rem solid #808080;
     justify-content: space-between;
 }
 .col-name{
     background-color: #808080;
-    padding: .9375rem;
 }
 .col-ticket{
     width: calc(100% / 6);
+    padding: .9375rem;
 }
 .col-ticket.col-name{
     width: auto;
 }
 .d-none{
     display: none;
+}
+.col-ticket h4:not(.col-ticket.col-name h4){
+    margin-bottom: 3.125rem;
+    font-size: 1.25rem;
+}
+.col-ticket span{
+    font-size: 1.125rem;
+}
+.col-ticket.col-name h4{
+    font-size: 20px;
+}
+.col-ticket.col-name{
+    font-weight: bolder;
 }
