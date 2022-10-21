@@ -1,0 +1,55 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* COMMON */
+.container{
+    max-width: 71.25rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.25rem 1.875rem;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+body{
+    background-color: #B91450;
+}
+/* HEADER */
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 6.25rem;
+}
+/* MAIN */
+main{
+    margin-top: 1.875rem;
+}
+h3{
+    color: #B91450;
+    text-align: center;
+    margin-bottom: .9375rem;
+}
+input,select{
+    border: 1px solid #B91450;
+    border-radius: .625rem;
+    margin: auto;
+}
+.col-btn{
+    width: 100%;
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    color: #B91450;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border-radius: .625rem;
+    padding: .3125rem;
+}
