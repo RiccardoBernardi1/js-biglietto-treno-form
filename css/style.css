@@ -21,7 +21,7 @@ body{
     background-color: #B91450;
 }
 /* HEADER */
-h1{
+h1,h2{
     color: white;
     text-align: center;
     margin-top: 6.25rem;
@@ -30,7 +30,7 @@ h1{
 main{
     margin-top: 1.875rem;
 }
-h3{
+#ticket-generator h3{
     color: #B91450;
     text-align: center;
     margin-bottom: .9375rem;
@@ -52,4 +52,16 @@ input,select{
     font-size: 1.25rem;
     border-radius: .625rem;
     padding: .3125rem;
+}
+.row-border{
+    display: flex;
+    border: .125rem solid #808080;
+    justify-content: space-between;
+}
+.col-name{
+    background-color: #808080;
+    padding: .9375rem;
+}
+.col-ticket{
+    width: calc(100% / 6);
 }
