@@ -30,10 +30,13 @@ h1,h2{
 main{
     margin-top: 1.875rem;
 }
-#ticket-generator h3{
+#ticket-generator label{
     color: #B91450;
     text-align: center;
     margin-bottom: .9375rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: block;
 }
 .row input,select{
     border: 1px solid #B91450;
@@ -90,13 +93,4 @@ main{
 }
 .col-ticket.col-name{
     font-weight: bolder;
-}
-#err{
-    max-width: 11.25rem;
-    text-align: center;
-    background-color: rgba(155, 0, 0, 0.5);
-    border-radius: .3125rem;
-    padding: .3125rem;
-    font-weight: bold;
-    font-size: 1.125rem;
 }

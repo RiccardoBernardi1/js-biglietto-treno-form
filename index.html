@@ -12,63 +12,87 @@
             <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         </header>
         <main>
+            <!-- sezione TICKET GENERATOR -->
             <section id="ticket-generator">
                 <div class="container">
                     <form action="">
                         <div class="row">
+                            <!-- input nome -->
                             <div class="col">
-                                <h3>Nome Cognome</h3>
-                                <input type="text" id="name">
+                                <label for="name">Nome Cognome</label>
+                                <input type="text" id="name" >
                             </div>
+                            <!-- /input nome -->
+                            <!-- input km -->
                             <div class="col">
-                                <h3>Km da percorrere</h3>
+                                <label for="km">Km da percorrere</label>
                                 <input type="text" id="km">
                             </div>
+                            <!-- /input km -->
+                            <!-- select età -->
                             <div class="col">
-                                <h3>Fascia d'età</h3>
+                                <label for="age">Fascia d'età</label>
                                 <select name="age" id="age">
-                                    <option value="adult">Maggiorenne</option>
-                                    <option value="under-age">Minorenne
+                                    <option value=0>Maggiorenne</option>
+                                    <option value=1>Minorenne
                                     </option>
-                                    <option value="over-65">Over 65</option>
+                                    <option value=2>Over 65</option>
                                 </select>
                             </div>
+                            <!-- /select età -->
                         </div>
                         <div class="col-btn">
+                            <!-- bottone genera -->
                             <button type="button" id="btn-generator" class="btn">Genera</button>
+                            <!-- /bottone genera -->
+                            <!-- bottone annulla -->
                             <input type="reset" value="Annulla" id="btn-cancel" class="btn">
+                            <!-- /bottone annulla -->
                         </div>
                     </form>
                 </div>
             </section>
+            <!-- /sezione TICKET GENERATOR -->
+            <!-- sezione TICKET -->
             <section id="ticket" class="d-none">
                 <h2>IL TUO BIGLIETTO</h2>
                 <div class="container">
                     <h3>DETTAGLIO PASSEGGERI</h3>
                     <div class="row-border">
+                        <!-- nome passeggero -->
                         <div class="col-ticket col-name">
                             <h4>NOME PASSEGGERO</h4>
                             <span id="name-showed"></span>
                         </div>
+                        <!-- /nome passeggero -->
+                        <!-- offerta biglietto -->
                         <div class="col-ticket">
                             <h4>Offerta</h4>
                             <span id="offer"></span>
                         </div>
+                        <!-- /offerta biglietto -->
+                        <!-- carrozza biglietto -->
                         <div class="col-ticket">
                             <h4>Carrozza</h4>
                             <span id="wagon"></span>
                         </div>
+                        <!-- /carrozza biglietto -->
+                        <!-- codice cp biglietto -->
                         <div class="col-ticket">
                             <h4>Codice Cp</h4>
                             <span id="cp-code"></span>
                         </div>
+                        <!-- /codice cp biglietto -->
+                        <!-- costo biglietto -->
                         <div class="col-ticket">
                             <h4>Costo biglietto</h4>
                             <span id="price"></span>
                         </div>
+                        <!-- /costo biglietto -->
                     </div>
                 </div>
             </section>
+            <!-- /sezione TICKET -->
         </main>
         <script src="js/main.js"></script>
     </body>
